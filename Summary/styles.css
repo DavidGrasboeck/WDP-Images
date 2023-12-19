@@ -1,36 +1,33 @@
 :root {
-  --background-color-primary: #858585;
-  --background-color-secondary: #cf8dd0;
+  --background-color-primary: #c9c9c9;
+  --background-color-secondary: #7d14be;
   --text-color-primary: #370038;
   --text-color-secondary: #303030;
 
   --font-family-body: Helvetica, Arial, sans-serif;
   --font-family-monospace: "VT323", "Courier New", Courier, monospace;
 }
-/*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #242424;
-    --background-color-variant: #414141;
-    --text-color: #ffffff;
-    --main-color-variant: #45544d;
-    --accent-color: #f5938e;
-    --highlight-color: #1ebedf;
 
-    --text-color-headlines: var(--accent-color);
-    --nav-active-color: var(--accent-color);
-  }
-}
-*/
 header{
     color:#ffffff;
-    background-color: #79007b;
+    background-color: #9400d3;
     text-align: center;
     padding: 15px;
+    background-image: url("../Images/bg4.jpg");
 }
 body{
     background-color: var(--background-color-primary);
-    color: var(--text-color-primary)
+    color: var(--text-color-primary);
+    text-align: left;
+    background-image: url("../Images/bg2.png");
+    background-repeat: repeat;
+
+}
+section{
+    width: clamp(250px, 70vw, 1000px);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section:nth-child(even){
