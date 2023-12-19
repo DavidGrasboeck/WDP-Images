@@ -42,7 +42,7 @@ body{
     color: var(--text-color-primary);
     text-align: left;
     background-image: url("../Images/bg2.jpg");
-    background-repeat: repeat;
+    background-size: cover;
     font-family: var(  --font-family-body);
 }
 section, footer{
