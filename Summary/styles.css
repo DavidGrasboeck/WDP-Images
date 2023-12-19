@@ -41,12 +41,13 @@
       background-color: var(--background-color-primary);
       color: var(--text-color-primary);
       text-align: left;
+      background-color: #19010f;
       background-image: url("https://drive.google.com/uc?export=download&id=1xb828fgsk2gaZG-WeHBBt8cIAosEzMwW");
       background-size: cover;
       font-family: var(  --font-family-body);
   }
   section, footer{
-      width: clamp(250px, 70vw, 1000px);
+      width: clamp(250px, 70vw, 2000px);
       padding: 10px;
       margin-left: auto;
       margin-right: auto;
