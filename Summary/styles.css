@@ -1,7 +1,7 @@
 :root {
   --background-color-primary: #c9c9c9;
   --background-color-secondary: #7d14be;
-  --text-color-primary: #370038;
+  --text-color-primary: #ffffff;
   --text-color-secondary: #303030;
 
   --font-family-body: Helvetica, Arial, sans-serif;
@@ -21,16 +21,17 @@ body{
     text-align: left;
     background-image: url("../Images/bg2.png");
     background-repeat: repeat;
-
 }
-section{
+section, footer{
     width: clamp(250px, 70vw, 1000px);
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*
 section:nth-child(even){
     background-color: var(--background-color-secondary);
     color: var(--text-color-secondary);
 }
+/*
+
