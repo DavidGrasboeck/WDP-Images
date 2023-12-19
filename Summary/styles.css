@@ -47,7 +47,7 @@
       font-family: var(  --font-family-body);
   }
   section, footer{
-      width: clamp(250px, 70vw, 2000px);
+      width: clamp(250px, 70vw, 2000px); /*2000 to fit for 4k screens*/
       padding: 10px;
       margin-left: auto;
       margin-right: auto;
