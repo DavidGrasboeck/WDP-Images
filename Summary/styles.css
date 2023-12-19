@@ -35,6 +35,7 @@ header{
 
 h2{
     color: #ff00a5;
+    font-family: var(  --font-family-head);
 }
 
 body{
