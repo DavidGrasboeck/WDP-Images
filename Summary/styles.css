@@ -53,7 +53,7 @@
   }
   footer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(3,2fr);
     grid-gap: 10px;
 }
 
@@ -69,6 +69,7 @@
 
 a {
     color: var(--link-color);
+
 }
 a:visited{
     color:var(--link-color--clicked);
@@ -76,3 +77,15 @@ a:visited{
 a:hover{
     color:var(--text-color-primary);
 }
+
+@media screen and (min-width:1100px) {
+    footer{
+        grid-template-columns: repeat(6,2fr);
+    }
+}
+@media screen and (max-width:500px) {
+    footer{
+        grid-template-columns: repeat(2,3fr);
+    }
+}
+
