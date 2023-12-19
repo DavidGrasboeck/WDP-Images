@@ -1,3 +1,30 @@
-.source{
-    color:  red;
+:root {
+  --background-color-primary: #858585;
+  --background-color-secondary: #cf8dd0;
+  --text-color-primary: #370038;
+  --text-color-secondary: #ffffff;
+
+  --font-family-body: Helvetica, Arial, sans-serif;
+  --font-family-monospace: "VT323", "Courier New", Courier, monospace;
+}
+/*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #242424;
+    --background-color-variant: #414141;
+    --text-color: #ffffff;
+    --main-color-variant: #45544d;
+    --accent-color: #f5938e;
+    --highlight-color: #1ebedf;
+
+    --text-color-headlines: var(--accent-color);
+    --nav-active-color: var(--accent-color);
+  }
+}
+*/
+header{
+    color:var(--text-color-secondary);
+    background-color: #79007b;
+    text-align: center;
+    padding: 15px;
 }
