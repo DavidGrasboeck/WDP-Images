@@ -2,7 +2,7 @@
   --background-color-primary: #858585;
   --background-color-secondary: #cf8dd0;
   --text-color-primary: #370038;
-  --text-color-secondary: #ffffff;
+  --text-color-secondary: #303030;
 
   --font-family-body: Helvetica, Arial, sans-serif;
   --font-family-monospace: "VT323", "Courier New", Courier, monospace;
@@ -23,8 +23,17 @@
 }
 */
 header{
-    color:var(--text-color-secondary);
+    color:#ffffff;
     background-color: #79007b;
     text-align: center;
     padding: 15px;
+}
+body{
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary)
+}
+
+section:nth-child(even){
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-secondary);
 }
