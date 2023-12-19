@@ -9,12 +9,12 @@ function startTimer(durationInSeconds, callback) {
 
 window.onload = () => {
     var i = 1;
+    /*
     startTimer(1, () => {
-        console.log('asdf');
-
         document.body.style.backgroundImage = `url('../Images/bg${i}.jpg')`;
         i %= 6;
         i++;
     });
+    */
 };
 

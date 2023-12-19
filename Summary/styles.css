@@ -3,6 +3,8 @@
   --background-color-secondary: #7d14be;
   --text-color-primary: #ffffff;
   --text-color-secondary: #303030;
+  --link-color: #dda7ff;
+  --link-color--clicked: #dda7ff;
 
   --font-family-body: Helvetica, Arial, sans-serif;
   --font-family-monospace: "VT323", "Courier New", Courier, monospace;
@@ -19,7 +21,7 @@ body{
     background-color: var(--background-color-primary);
     color: var(--text-color-primary);
     text-align: left;
-    background-image: url("../Images/bg2.png");
+    background-image: url("../Images/bg2.jpg");
     background-repeat: repeat;
 }
 section, footer{
@@ -27,6 +29,20 @@ section, footer{
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+.source{
+   padding: 10px;
+}
+.source ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    color: var(--link-color);
 }
 /*
 section:nth-child(even){
