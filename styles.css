@@ -10,15 +10,26 @@
     --font-family-body: 'Roboto', sans-serif;
 }
 
+
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+
     color: #19010f;
-    background-color: #9400d3;
     text-align: center;
-    padding: 15px;
     font-weight: bold;
     background-color: #ff00a5;
     font-family: var(--font-family-head);
 }
+
+body .first-section {
+    margin-top: 50px;
+    padding-top: 60px;
+}
+
 
 .header {
     display: flex;
@@ -57,6 +68,7 @@ h2 {
 
 body {
     margin: 0px;
+    padding: 0px;
     background-color: var(--background-color-primary);
     color: var(--text-color-primary);
     text-align: left;
