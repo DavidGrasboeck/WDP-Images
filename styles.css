@@ -105,6 +105,16 @@ a:hover {
     color: var(--text-color-primary);
 }
 
+
+code {
+    background-color: #311726;
+    color: #fff;
+    border: 1px solid #5e4c5e;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 @media screen and (min-width:1100px) {
     footer {
         grid-template-columns: repeat(6, 2fr);
