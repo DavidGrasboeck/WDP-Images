@@ -23,3 +23,7 @@
 .image_contain {
     object-fit: contain;
 }
+
+.image_none {
+    object-fit: none;
+}

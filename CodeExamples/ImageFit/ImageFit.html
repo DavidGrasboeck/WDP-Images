@@ -18,12 +18,12 @@
 <body>
     <header class="header">
         <div>
-            <h1><a href="Summary.html" class="nav-link">Images</a></h1>
+            <h1><a href="../../Summary/Summary.html" class="nav-link">Images</a></h1>
             <h1>/Fit</h1>
         </div>
         <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
-    <section>
+    <section class="first-section">
         <p>
             Lets say we have following image that we want to include in our website:
         </p>
@@ -32,7 +32,8 @@
             There are different ways to do that. This Code example will show the different ways to 
             fit it into a dynamically sized object using <code>object-fit</code> . Here for example:
             a box that scales its width with screen-size, but has a fixed height. Try changing your
-            screen width to fully compare the options.
+            screen width to fully compare the options. It is also important to set the images width
+            and height to 100% to make it dependent of the parent.
              
         </p>
         <div class="box">
@@ -60,6 +61,16 @@
             <div class="box">
                 <img src="./fitImage.jpg" class="image_contain">
             </div>
+        </p>
+        <p>
+            <code>object-fit: scale-down</code> is similar to <code>object-fit: contain</code>, but will
+            never scale your image up, preventing ugly pixelated images.
+        </p>
+        <p>
+            Lastly there is also <code>object-fit: none</code>, which will keep your the original resolution.
+            This will sometimes result in cropping your image and at other times leaving empty spaces on 
+            some or all sides. Of course this does not work if the width or height is set to be relative
+            to that of its parent.
         </p>
     <footer>
         <div class="source">
