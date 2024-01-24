@@ -30,18 +30,37 @@
         <img src="./fitImage.jpg" width="300px">
         <p>
             There are different ways to do that. This Code example will show the different ways to 
-            fit it into a dynamically sized object  <code>object-fit</code> . Here for example:
-             a box that scales its width with screen-size, but has a fixed height.
+            fit it into a dynamically sized object using <code>object-fit</code> . Here for example:
+            a box that scales its width with screen-size, but has a fixed height. Try changing your
+            screen width to fully compare the options.
+             
         </p>
         <div class="box">
         </div>
         <p>
-            To fully fill the box the default option is
+            To fully fill the box the default option is <code>object-fit: fill</code> which we will
+            appy to our img. This will make sure that the parent is always completely filled - stretching
+            the image if necessary.
             <div class="box">
                 <img src="./fitImage.jpg" class="image_fill">
             </div>
         </p>
-
+        <p>
+            If you want to preserve your aspect ratio you can use <code>object-fit: cover</code>. 
+            The image will still fill the entire area, but does not distort, instead cropping the image
+            at the borders
+            <div class="box">
+                <img src="./fitImage.jpg" class="image_cover">
+            </div>
+        </p>
+        <p>
+            If you want to make soure the entire image is visible and don't care about filling the box,
+            <code>object-fit: contain</code> will be most useful. The image will be fully visible and 
+            as large as allowed, but the side that is to small or large will be filled with empty space.
+            <div class="box">
+                <img src="./fitImage.jpg" class="image_contain">
+            </div>
+        </p>
     <footer>
         <div class="source">
             <h5>General Sources</h5>
