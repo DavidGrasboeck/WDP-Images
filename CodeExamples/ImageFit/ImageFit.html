@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../styles.css" rel="stylesheet" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <link href="./imageFit.css" rel="stylesheet" />
     <title>WDP-Images</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,69 +19,29 @@
     <header class="header">
         <div>
             <h1><a href="Summary.html" class="nav-link">Images</a></h1>
+            <h1>/Fit</h1>
         </div>
         <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
     <section>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
+        <p>
+            Lets say we have following image that we want to include in our website:
         </p>
-    </section>
-    <section>
-        <h2>Image Position</h2>
-        <p>----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        <img src="./fitImage.jpg" width="300px">
+        <p>
+            There are different ways to do that. This Code example will show the different ways to 
+            fit it into a dynamically sized object  <code>object-fit</code> . Here for example:
+             a box that scales its width with screen-size, but has a fixed height.
         </p>
-    </section>
-    <section>
-        <h2>Image Fit</h2>
-        <p>----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        <div class="box">
+        </div>
+        <p>
+            To fully fill the box the default option is
+            <div class="box">
+                <img src="./fitImage.jpg" class="image_fill">
+            </div>
         </p>
-    </section>
-    <section>
-        <h2>Aspect Ratio</h2>
-        <p>----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-    </section>
-    <section>
-        <h2>Flexbox</h2>
-        <p>----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-    </section>
-    <section>
-        <h2>Background Images</h2>
-        <p>----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-    </section>
-    <section>
-        <h2>Web Performance</h2>
-        <p> ----- some example here ---
-            ----- some example here ---
-            ----- some example here ---
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        </p> dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-        Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </section>
+
     <footer>
         <div class="source">
             <h5>General Sources</h5>
