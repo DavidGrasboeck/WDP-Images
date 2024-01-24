@@ -42,7 +42,8 @@
       color: var(--text-color-primary);
       text-align: left;
       background-color: #19010f;
-      background-image: url("https://drive.google.com/uc?export=download&id=1xb828fgsk2gaZG-WeHBBt8cIAosEzMwW");
+      /*background-image: url("https://drive.google.com/uc?export=download&id=1xb828fgsk2gaZG-WeHBBt8cIAosEzMwW");*/
+      background-image: url("../Images/bg2.jpg");
       background-size: cover;
       font-family: var(  --font-family-body);
   }
