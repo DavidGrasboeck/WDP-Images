@@ -1,0 +1,60 @@
+.box {
+    width: 75%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    object-fit:cover;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.image_fill {
+    object-fit: fill;
+}
+
+.image_cover {
+    object-fit: cover;
+}
+
+.image_contain {
+    object-fit: contain;
+}
+
+.image_none {
+    object-fit: none;
+}
+
+body .normal-background {
+    background-image: url("./backgroundImages.jpg");
+    background-size: 70%;
+    padding: 15px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+}
+body .size-background {
+    background-image: url("./backgroundImages.jpg");
+    background-size: 120%;
+    padding: 15px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+}
+body .repeating-background {
+    background-image: url("./backgroundImagesBorder.jpg");
+    background-repeat: repeat;
+    background-size: 30%;
+    padding: 15px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+}
+body .fixed-background {
+    background-image: url("./backgroundImages.jpg");
+    background-attachment: fixed;
+    background-size: 70%;
+    padding: 15px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+}

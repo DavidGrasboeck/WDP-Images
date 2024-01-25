@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../styles.css" rel="stylesheet" />
-    <link href="./imageFit.css" rel="stylesheet" />
+    <link href="./backgroundImages.css" rel="stylesheet" />
     <title>WDP-Images</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,65 +13,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
     <header class="header">
         <div>
             <h1><a href="../../Summary/Summary.html" class="nav-link">Images</a></h1>
-            <h1>/Fit</h1>
+            <h1>/Background</h1>
         </div>
         <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
     <section class="first-section">
-        <p>
-            Lets say we have following image that we want to include in our website:
-        </p>
-        <img src="./fitImage.jpg" width="300px" alt="">
-        <p>
-            There are different ways to do that. This Code example will show the different ways to 
-            fit it into a dynamically sized object using <code>object-fit</code> . Here for example:
-            a box that scales its width with screen-size, but has a fixed height. Try changing your
-            screen width to fully compare the options. It is also important to set the images width
-            and height to 100% to make it dependent on the parent.
-             
-        </p>
-        <div class="box">
+        <div class="normal-background">
+            <p>
+                Images can also be set as a background for basically everything. With <code>background-image</code>
+                the background of this section can be easily set to any image.
+                <br><br>
+            </p>
+            <code>background-image: url("./backgroundImages.jpg");</code>
         </div>
-        <p>
-            To fully fill the box the default option is <code>object-fit: fill</code> which we will
-            appy to our img. This will make sure that the parent is always completely filled - stretching
-            the image if necessary.
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_fill" alt="">
-            </div>
-        </p>
-        <p>
-            If you want to preserve your aspect ratio you can use <code>object-fit: cover</code>. 
-            The image will still fill the entire area, but does not distort, instead cropping the image
-            at the borders
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_cover" alt="">
-            </div>
-        </p>
-        <p>
-            If you want to make soure the entire image is visible and don't care about filling the box,
-            <code>object-fit: contain</code> will be most useful. The image will be fully visible and 
-            as large as allowed, but the side that is to small or large will be filled with empty space.
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_contain" alt="">
-            </div>
-        </p>
-        <p>
-            <code>object-fit: scale-down</code> is similar to <code>object-fit: contain</code>, but will
-            never scale your image up, preventing ugly pixelated images.
-        </p>
-        <p>
-            Lastly there is also <code>object-fit: none</code>, which will keep your the original resolution.
-            This will sometimes result in cropping your image and at other times leaving empty spaces on 
-            some or all sides. Of course this does not work if the width or height is set to be relative
-            to that of its parent.
-        </p>
+        <div class="size-background">
+            <p>
+                The zoom of the background can be changed with <code>background-size</code>.
+                In this example, the background is 150% of the original size.
+                The size can also be set to fixed pixels size, to <code>cover</code>, to cover the entire object or
+                to <code>contain</code>, to be completely contained within the object.
+                <br><br>
+            </p>
+            <code>background-size: 150%;</code>
+        </div>
+        <div class="repeating-background">
+            <p>
+                It can also be a good idea to have a repeating background. The <code>background-repeat</code>
+                mode is on <code>repeat</code> at default. If you don't want that, you can use <code>no-repeat</code>.
+                <br><br>
+            </p>
+            <code>background-repeat: repeat;</code>
+        </div>
+        <div class="fixed-background">
+            <p>
+                To create this cool effect, the <code>background-attachment</code> is set to <code>fixed</code>.
+                This means that the background stays at the same spot when you scroll and doesn't move with the page.
+                <br><br>
+            </p>
+            <code>background-attachment: fixed;</code>
+        </div>
     </section>
     <footer>
         <div class="source">
@@ -128,7 +112,8 @@
                     <a target="_blank" href="https://www.w3schools.com/csS/css3_flexbox.asp">w3schools</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
+                    <a target="_blank"
+                        href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
                 </li>
             </ul>
         </div>
@@ -156,7 +141,5 @@
         </div>
     </footer>
 </body>
-<!-- <script src="./summary.js"></script>
-    -->
 
 </html>
