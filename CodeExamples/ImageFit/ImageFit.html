@@ -27,7 +27,7 @@
         <p>
             Lets say we have following image that we want to include in our website:
         </p>
-        <img src="./fitImage.jpg" width="300px">
+        <img src="./fitImage.jpg" width="300px" alt="">
         <p>
             There are different ways to do that. This Code example will show the different ways to 
             fit it into a dynamically sized object using <code>object-fit</code> . Here for example:
@@ -43,7 +43,7 @@
             appy to our img. This will make sure that the parent is always completely filled - stretching
             the image if necessary.
             <div class="box">
-                <img src="./fitImage.jpg" class="image_fill">
+                <img src="./fitImage.jpg" class="image_fill" alt="">
             </div>
         </p>
         <p>
@@ -51,7 +51,7 @@
             The image will still fill the entire area, but does not distort, instead cropping the image
             at the borders
             <div class="box">
-                <img src="./fitImage.jpg" class="image_cover">
+                <img src="./fitImage.jpg" class="image_cover" alt="">
             </div>
         </p>
         <p>
@@ -59,7 +59,7 @@
             <code>object-fit: contain</code> will be most useful. The image will be fully visible and 
             as large as allowed, but the side that is to small or large will be filled with empty space.
             <div class="box">
-                <img src="./fitImage.jpg" class="image_contain">
+                <img src="./fitImage.jpg" class="image_contain" alt="">
             </div>
         </p>
         <p>
