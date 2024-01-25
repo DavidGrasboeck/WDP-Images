@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <title>WDP-Images</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1><a href="../../Summary/Summary.html" class="nav-link">Images</a></h1>
+            <h1>/Loading</h1>
+        </div>
+        <h3>By David Grasböck and Rafael Fleischanderl</h3>
+    </header>
+    <section class="first-section">
+        <button onclick="clearCacheAndReload()">Clear Cache and Reload</button>
+        <img src="https://get.pxhere.com/photo/abstract-sky-texture-purple-atmosphere-green-color-blue-pink-circle-painting-background-digital-shape-abstract-background-acrylic-paint-abstract-backgrounds-colorful-abstract-background-1402034.jpg" alt="Image 2" loading="lazy" width="500px">
+                                
+    </section>
+    <footer>
+        <div class="source">
+            <h5>General Sources</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/">mozilla web docs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="source">
+            <h5>Image Fit/Position</h5>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.cssmine.com/blog/2020-02-12-css-object-fit-and-object-position-properties-crop-images-embedded-in-html">cssmine.com</a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html">w3docs</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/css/css3_images.asp">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/csS/css3_object-fit.asp">w3schools</a>
+                </li>
+            </ul>
+        </div>
+        <div class="source">
+            <h5>Aspect Ratio</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://css-tricks.com/almanac/properties/a/aspect-ratio/">css-tricks</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/howto/howto_css_aspect_ratio.asp">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/Cssref/css_pr_aspect-ratio.php">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">MDN Docs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="source">
+            <h5>Flexbox</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/csS/css3_flexbox.asp">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
+                </li>
+            </ul>
+        </div>
+        <div class="source">
+            <h5>Background Images</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/htmL/html_images_background.asp">w3schools</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.w3schools.com/css/css_background_image.asp">w3schools</a>
+                </li>
+            </ul>
+        </div>
+        <div class="source">
+            <h5>Web Performance</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=hJ7Rg1821Q0">Web Dev Simplified</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://web.dev/learn/performance/image-performance">web.dev</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    function clearCacheAndReload() {
+        // Reset the loading attribute of images to 'eager'
+        var images = document.getElementsByTagName('img');
+        for (var i = 0; i < images.length; i++) {
+            images[i].setAttribute('loading', 'eager');
+        }
+
+        // Reload the page to fetch images again
+        location.reload(true); // Passing true as an argument forces a reload from the server
+    }
+</script>
+</html>
