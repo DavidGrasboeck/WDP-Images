@@ -1,0 +1,20 @@
+img{
+    width: 50%;
+}
+
+.image_static {
+    position: static;
+
+}
+
+.image_cover {
+    object-fit: cover;
+}
+
+.image_contain {
+    object-fit: contain;
+}
+
+.image_none {
+    object-fit: none;
+}
