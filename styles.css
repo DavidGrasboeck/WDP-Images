@@ -1,9 +1,9 @@
 :root {
     --background-color-primary: #c9c9c9;
-    --background-color-secondary: #7d14be;
+    --background-color-secondary: #b825c0;
     --text-color-primary: #ffffff;
     --text-color-secondary: #303030;
-    --link-color: #9655ff;
+    --link-color: #dd55ff;
     --link-color--clicked: #dda7ff;
 
     --font-family-head: 'Exo 2', sans-serif;
