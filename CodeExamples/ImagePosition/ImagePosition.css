@@ -1,20 +1,59 @@
-img{
+.box {
     width: 50%;
+    border: 1px solid red;
+    margin-bottom: 50px;
+}
+
+
+img{
+    width: 100%;
 }
 
 .image_static {
     position: static;
-
+    
 }
 
-.image_cover {
-    object-fit: cover;
+.image_relative {
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
 
-.image_contain {
-    object-fit: contain;
+
+.absolute_box{
+    aspect-ratio: 3 / 2;
+}
+.image_absolute {
+    width: 35.75%;
+    position: absolute;
+    left: 250px;
+    top: 1100px;
+    visibility: hidden;
+}
+#change_absolute_image:checked + #absolute_box .image_absolute{
+    visibility: visible;
 }
 
-.image_none {
-    object-fit: none;
+.image_fixed {
+    width: 35.75%;
+    position: fixed;
+    left: 14%;
+    top: 25%;
+    visibility: hidden;
+}
+
+#change_absolute_image:checked + #absolute_box .image_fixed{
+    visibility: visible;
+}
+
+.sticky_box{
+    width: 10%;
+    height: 300px;
+}
+
+.image_sticky  {
+    width: 100%;
+    position: sticky;
+    top: 50%;
 }
