@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <link href="./ImagePosition.css" rel="stylesheet" />
+    <title>WDP-Images</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div>
+            <h1><a href="../../Summary/Summary.html" class="nav-link">Images</a></h1>
+            <h1>/Fit</h1>
+        </div>
+        <h3>By David Grasböck and Rafael Fleischanderl</h3>
+    </header>
+    <section class="first-section">
+        <p>
+            The <code>position</code> attribute can be applied to any element and is one
+            of the most basic and fundamental attributes. Its options <code>static, relative,
+            absolute, fixed</code> and <code> sticky</code> combined with <code>left, right,
+            top, bottom </code> so set the distances can by used to complete customized an
+            elements position within a website.
+        </p>
+        <p>
+            The default value is <code>position: static;</code>, which tells the element
+            to follow the normal flow of the website. It will ignore any distance given:
+        </p>
+        <div class="box">
+            <img src="./ImagePosition.jpg" class="image_static" alt="">
+        </div>
+        <p>
+            <code>position: relative;</code> allows to offset following image with a given distance
+            <code>top:50px;</code> <code>left:50px;</code> to its supposed position:
+        </p>
+        <div class="box">
+            <img src="./ImagePosition.jpg" class="image_relative" alt="">
+        </div>
+        <br><br>
+        <p>
+            <code>position: absolute;</code> removes the element from the normal website-flow
+            and orients itself with the given distance from the borders of the website.
+            The following image has the css properties <code>position: absolute;
+            left: 250px; top: 1100px;</code> Resize your window to see why absolute position
+            might not be the optimal option.
+        </p>
+        <label for="change_absolute_image">Make the absolute image visible:</label>
+        <input type="checkbox" id="change_absolute_image">
+        <div class="box absolute_box">
+            <img src="./ImagePosition.jpg" class="image_absolute" alt="">
+        </div>
+        <p>
+            <code>position: sticky;</code> makes the image fixed to your sreen. It will be
+            on the same position on your screen, but only as long as it does not leave Its
+            parents space.
+        </p>
+        <div class="box sticky_box">
+            <img src="./ImagePosition.jpg" class="image_sticky" alt="">
+        </div>
+        <p>
+            <code>position: fixed;</code> makes the image fixed to your window, meaning
+            it will stay fixed on your screen even though you are scrolling up and down.
+            Useful for having a fixed header.
+        </p>
+        <label for="change_absolute_image">Make the fixed image visible:</label>
+        <input type="checkbox" id="change_absolute_image">
+        <div class="box absolute_box">
+            <img src="./ImagePosition.jpg" class="image_fixed" alt="">
+        </div>
+
+        <footer>
+            <div class="source">
+                <h5>General Sources</h5>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/en-US/">mozilla web docs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="source">
+                <h5>Image Fit/Position</h5>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.cssmine.com/blog/2020-02-12-css-object-fit-and-object-position-properties-crop-images-embedded-in-html">cssmine.com</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html">w3docs</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/css/css3_images.asp">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/csS/css3_object-fit.asp">w3schools</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="source">
+                <h5>Aspect Ratio</h5>
+                <ul>
+                    <li>
+                        <a target="_blank"
+                            href="https://css-tricks.com/almanac/properties/a/aspect-ratio/">css-tricks</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.w3schools.com/howto/howto_css_aspect_ratio.asp">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/Cssref/css_pr_aspect-ratio.php">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">MDN
+                            Docs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="source">
+                <h5>Flexbox</h5>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/csS/css3_flexbox.asp">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="source">
+                <h5>Background Images</h5>
+                <ul>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.w3schools.com/htmL/html_images_background.asp">w3schools</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.w3schools.com/css/css_background_image.asp">w3schools</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="source">
+                <h5>Web Performance</h5>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=hJ7Rg1821Q0">Web Dev Simplified</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://web.dev/learn/performance/image-performance">web.dev</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>
