@@ -27,7 +27,7 @@ img{
 .image_absolute {
     width: 35.75%;
     position: absolute;
-    left: 250px;
+    right: 250px;
     top: 1100px;
     visibility: hidden;
 }
