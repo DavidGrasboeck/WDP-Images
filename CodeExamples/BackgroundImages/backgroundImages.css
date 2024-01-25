@@ -1,30 +1,23 @@
+body .bg {
+    padding: 15px;
+    padding-bottom: 200px;
+    margin-bottom: 25px;
+}
 body .normal-background {
     background-image: url("./backgroundImages.jpg");
     background-size: 70%;
-    padding: 15px;
-    padding-bottom: 100px;
-    margin-bottom: 25px;
 }
 body .size-background {
     background-image: url("./backgroundImages.jpg");
     background-size: 120%;
-    padding: 15px;
-    padding-bottom: 100px;
-    margin-bottom: 25px;
 }
 body .repeating-background {
     background-image: url("./backgroundImagesBorder.jpg");
     background-repeat: repeat;
     background-size: 30%;
-    padding: 15px;
-    padding-bottom: 100px;
-    margin-bottom: 25px;
 }
 body .fixed-background {
     background-image: url("./backgroundImages.jpg");
     background-attachment: fixed;
     background-size: 70%;
-    padding: 15px;
-    padding-bottom: 100px;
-    margin-bottom: 25px;
 }
