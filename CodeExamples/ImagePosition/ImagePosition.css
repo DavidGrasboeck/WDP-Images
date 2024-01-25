@@ -31,7 +31,7 @@ img{
     top: 1100px;
     visibility: hidden;
 }
-#change_absolute_image:checked + #absolute_box .image_absolute{
+#change_absolute_image:checked + .absolute_box .image_absolute{
     visibility: visible;
 }
 
@@ -43,7 +43,7 @@ img{
     visibility: hidden;
 }
 
-#change_absolute_image:checked + #absolute_box .image_fixed{
+#change_absolute_image:checked + .absolute_box .image_fixed{
     visibility: visible;
 }
 
