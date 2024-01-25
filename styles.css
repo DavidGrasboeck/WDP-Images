@@ -77,6 +77,20 @@ body {
     background-size: cover;
     font-family: var(--font-family-body);
 }
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-primary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--text-color-primary);
+    color: var(--background-color-secondary);
+}
 
 section,
 footer {

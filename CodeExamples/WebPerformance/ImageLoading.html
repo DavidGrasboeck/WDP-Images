@@ -21,9 +21,16 @@
         <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
     <section class="first-section">
-        <button onclick="clearCacheAndReload()">Clear Cache and Reload</button>
-        <img src="https://get.pxhere.com/photo/abstract-sky-texture-purple-atmosphere-green-color-blue-pink-circle-painting-background-digital-shape-abstract-background-acrylic-paint-abstract-backgrounds-colorful-abstract-background-1402034.jpg" alt="Image 2" loading="lazy" width="500px">
-                                
+        <div>
+            <p>
+                It is importat to tink about what Images to use. This image for example 
+                <br><br>
+            </p>
+            <br>
+            <button id = "reloadButton">Clear Cache and Reload</button>
+            <br><br>
+            <img src="https://get.pxhere.com/photo/abstract-sky-texture-purple-atmosphere-green-color-blue-pink-circle-painting-background-digital-shape-abstract-background-acrylic-paint-abstract-backgrounds-colorful-abstract-background-1402034.jpg" alt="Image 2" loading="lazy" width="500px">
+        </div>                   
     </section>
     <footer>
         <div class="source">
@@ -108,17 +115,6 @@
             </ul>
         </div>
     </footer>
+    <script src="./clearCacheAndReload.js"></script>
 </body>
-<script>
-    function clearCacheAndReload() {
-        // Reset the loading attribute of images to 'eager'
-        var images = document.getElementsByTagName('img');
-        for (var i = 0; i < images.length; i++) {
-            images[i].setAttribute('loading', 'eager');
-        }
-
-        // Reload the page to fetch images again
-        location.reload(true); // Passing true as an argument forces a reload from the server
-    }
-</script>
 </html>
