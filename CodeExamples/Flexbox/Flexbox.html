@@ -22,40 +22,28 @@
         <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
     <section class="first-section">
+        <p>
+            In this example a flexbos is used to always center images in the container. <br>
+            With <code>display: flex</code> in the container, the item position becomes flexible
+            and can be set with <code>align-items</code> and <code>justify-content</code>. <br>
+            The <code>flex-direction</code> lets you choose how the items are aligned (collum, row).
+        </p>
+        <div class="code-block">
+            .flex-container {<br>
+            display: flex;<br>
+            align-items: center;<br>
+            justify-content: center;<br>
+            flex-direction: column;<br>
+            }<br>
+            .flex-item {<br>
+            flex: auto;<br>
+            object-fit: contain;<br>
+            }
+        </div>
         <div class="flex-container">
-            <img src="backgroundImages.jpg" class="flex-item" alt="">
-            <img src="backgroundImages.jpg" class="flex-item" alt="">
-            <img src="backgroundImages.jpg" class="flex-item" alt="">
+            <img src="Flexbox.jpg" class="flex-item" alt="">
+            <img src="Flexbox.jpg" class="flex-item" alt="">
         </div>
-        <div class="flex-container-vertical">
-            <p>Flex Item 1</p>
-            <p>Flex Item 2</p>
-            <p>Flex Item 3</p>
-        </div>
-        <div class="flex-container-justify">
-            <p>Flex Item 1</p>
-            <p>Flex Item 2</p>
-            <p>Flex Item 3</p>
-        </div>
-        <div class="flex-container-align">
-            <p>Flex Item 1</p>
-            <p>Flex Item 2</p>
-            <p>Flex Item 3</p>
-        </div>
-        <div class="flex-item">
-            Flex Item
-        </div>
-        <div class="flex-container-wrap">
-            <p>Flex Item 1</p>
-            <p>Flex Item 2</p>
-            <p>Flex Item 3</p>
-        </div>
-        <div class="flex-container-content">
-            <p>Flex Item 1</p>
-            <p>Flex Item 2</p>
-            <p>Flex Item 3</p>
-        </div>
-                                
     </section>
     <footer>
         <div class="source">

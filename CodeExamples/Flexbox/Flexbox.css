@@ -1,35 +1,19 @@
-
-.flex-container-vertical {
+.flex-container {
     display: flex;
+    height: 650px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
 }
-.flex-container-justify {
-    display: flex;
-    justify-content: space-between;
-}
-.flex-container-align {
-    display: flex;
-    align-items: center;
-}
 .flex-item {
-    flex: 1 0 auto;
-}
-.flex-container-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-.flex-container-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-
-.flex-container {
-
-    max-width: 100%; /* or a fixed width if needed */
-    margin: 0 auto; /* center the container on the page */
-}
-.flex-item {
-    flex-basis: 200px;
-    max-width: 50%;
+    flex: auto;
+    max-width: 90%;
+    max-height: 45%;
+    object-fit: contain;
 }
