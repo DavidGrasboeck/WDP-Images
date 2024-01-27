@@ -132,6 +132,9 @@ a:hover {
     color: var(--text-color-primary);
 }
 
+li {
+    margin-bottom: 20px;
+}
 
 code,
 .code-block {

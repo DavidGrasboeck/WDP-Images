@@ -15,14 +15,14 @@
 <body>
     <header>
         <div class="header">
-        <div>
-            <h1><a href="./index.html" class="nav-link">Images</a></h1>
-        </div>
-        <h3>By David Grasböck and Rafael Fleischanderl</h3>
+            <div>
+                <h1><a href="./index.html" class="nav-link">Images</a></h1>
+            </div>
+            <h3>By David Grasböck and Rafael Fleischanderl</h3>
         </div>
     </header>
     <section class="first-section">
-        Images are an important part of the web and included on almost every website. They can capture
+        Images are an important part of the web and included on almost every webpage. They can capture
         the users attention, instantly convey messages and how they are used can make or break a website.
         It is important to get them right. Which is why we decided to make our project about images.
     </section>
@@ -80,7 +80,8 @@
             Flexbox allows for precise control over the alignment, distribution, and order of images, optimizing their
             presentation on different screen sizes.
         </p>
-        <p><a href="./CodeExamples/Flexbox/Flexbox.html" class="nav-link">See an example on how centering Images using a flexbox works.</a></p>
+        <p><a href="./CodeExamples/Flexbox/Flexbox.html" class="nav-link">See an example on how centering Images using a
+                flexbox works.</a></p>
     </section>
     <section>
         <h2>Background Images</h2>
@@ -95,21 +96,45 @@
     <section>
         <h2>Web Performance</h2>
         <p>
-            Images take a long time to download (in comparion to the rest of the website).
-            So it's important to think about what and how much images to use.<br>
-            There a different kinds of images to coose from:<br>
-            <h2>My Unordered List</h2>
-            <ul>
-                <li>Jpg</li>
-                <p>Ideal for photographs and images with gradients.<br>
-                    Lossy compression, which may result in some loss of quality
-                </p>
-                <li>Png</li>
-                <li>Gif</li>
-                <li>Svg</li>
-            </ul>
+            Images take a long time to download (in comparison to the rest of the website).
+            So it's important to think about what and how many images to use.<br>
+            There are different kinds of images to choose from, these are the most common:<br>
+        <ul>
+            <li><strong>JPG</strong><br>
+                Ideal for photographs and images with gradients.<br>
+                Lossy compression, which may result in some loss of quality.<br>
+                Moderate to small file size, depending on the compression level.
+            </li>
+            <li><strong>PNG</strong><br>
+                For images with transparency or a need for high-quality graphics.<br>
+                Lossless compression, maintains high quality.
+                Generally larger file size than JPG.
+            <li><strong>GIF</strong><br>
+                Best for simple graphics, icons, and small animations.<br>
+                Limited to 256 colors.<br>
+                Supports simple animations through multiple frames.<br>
+                Small file size, especially for simple graphics and animations
+            <li><strong>SVG</strong><br>
+                Ideal for logos, icons, and illustrations. Scalable without loss of quality.<br>
+                Generally small file size for simple graphics, but can vary.
+            <li><strong>WebP</strong><br>
+                Provides both lossy and lossless compression. Generally offers smaller file sizes.<br>
+                Widely supported in modern browsers.<br>
+                Typically smaller file size than JPG or PNG.
+            <li><strong>AVIF</strong><br>
+                A modern image format designed for high-quality compression, suitable for a wide range of images.<br>
+                Utilizes the AV1 video codec for efficient compression.<br>
+                Becoming increasingly supported in modern browsers.<br>
+                Generally offers excellent compression, resulting in smaller file sizes compared to JPEG and PNG while maintaining high quality.
+        </ul>
+        <br>
+        Another important aspect is, when an image is loaded. The loading type is normally on eager (<code>loading="eager"</code>).<br>
+        That means that the image is loaded as soon as the webpage is loaded.<br>
+        You can set <code>loading="lazy"</code> to only load the image if it is on-screen.<br>
+        That can help, for example if you have a huge gallery. In the <code>eager</code> state, all images would be loaded at the start.
         </p>
-        <p><a href="./CodeExamples/WebPerformance/ImageLoading.html" class="nav-link">See an examples loading Images.</a>
+        <p><a href="./CodeExamples/WebPerformance/ImageLoading.html" class="nav-link">See an examples loading
+                Images.</a>
         </p>
     </section>
     <section>
