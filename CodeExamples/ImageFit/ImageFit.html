@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,14 @@
 
 
 <body>
-    <header class="header">
-        <div>
-            <h1><a href="../../index.html" class="nav-link">Images</a></h1>
-            <h1><a href="./ImageFit.html" class="nav-link">/Fit</a></h1>
+    <header>
+        <div class="header">
+            <div>
+                <h1><a href="../../index.html" class="nav-link">Images</a></h1>
+                <h1><a href="./ImageFit.html" class="nav-link">/Fit</a></h1>
+            </div>
+            <h3>By David Grasböck and Rafael Fleischanderl</h3>
         </div>
-        <h3>By David Grasböck and Rafael Fleischanderl</h3>
     </header>
     <section class="first-section">
         <p>
@@ -29,12 +31,12 @@
         </p>
         <img src="./fitImage.jpg" width="300px" alt="">
         <p>
-            There are different ways to do that. This Code example will show the different ways to 
+            There are different ways to do that. This Code example will show the different ways to
             fit it into a dynamically sized object using <code>object-fit</code> . Here for example:
             a box that scales its width with screen-size, but has a fixed height. Try changing your
             screen width to fully compare the options. It is also important to set the images width
             and height to 100% to make it dependent on the parent.
-             
+
         </p>
         <div class="box">
         </div>
@@ -42,25 +44,25 @@
             To fully fill the box the default option is <code>object-fit: fill</code> which we will
             appy to our img. This will make sure that the parent is always completely filled - stretching
             the image if necessary.
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_fill" alt="">
-            </div>
+        <div class="box">
+            <img src="./fitImage.jpg" class="image_fill" alt="">
+        </div>
         </p>
         <p>
-            If you want to preserve your aspect ratio you can use <code>object-fit: cover</code>. 
+            If you want to preserve your aspect ratio you can use <code>object-fit: cover</code>.
             The image will still fill the entire area, but does not distort, instead cropping the image
             at the borders
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_cover" alt="">
-            </div>
+        <div class="box">
+            <img src="./fitImage.jpg" class="image_cover" alt="">
+        </div>
         </p>
         <p>
             If you want to make sure the entire image is visible and don't care about filling the box,
-            <code>object-fit: contain</code> will be most useful. The image will be fully visible and 
+            <code>object-fit: contain</code> will be most useful. The image will be fully visible and
             as large as allowed, but the side that is to small or large will be filled with empty space.
-            <div class="box">
-                <img src="./fitImage.jpg" class="image_contain" alt="">
-            </div>
+        <div class="box">
+            <img src="./fitImage.jpg" class="image_contain" alt="">
+        </div>
         </p>
         <p>
             <code>object-fit: scale-down</code> is similar to <code>object-fit: contain</code>, but will
@@ -68,7 +70,7 @@
         </p>
         <p>
             Lastly there is also <code>object-fit: none</code>, which will keep your the original resolution.
-            This will sometimes result in cropping your image and at other times leaving empty spaces on 
+            This will sometimes result in cropping your image and at other times leaving empty spaces on
             some or all sides. Of course this does not work if the width or height is set to be relative
             to that of its parent.
         </p>
@@ -128,7 +130,8 @@
                     <a target="_blank" href="https://www.w3schools.com/csS/css3_flexbox.asp">w3schools</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
+                    <a target="_blank"
+                        href="https://blog.logrocket.com/responsive-image-gallery-css-flexbox/">LogRocket</a>
                 </li>
             </ul>
         </div>
@@ -156,4 +159,5 @@
         </div>
     </footer>
 </body>
+
 </html>
