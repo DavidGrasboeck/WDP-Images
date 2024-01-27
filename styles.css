@@ -131,13 +131,17 @@ a:hover {
 }
 
 
-code {
+code,
+.code-block {
     background-color: #311726;
     color: #fff;
     border: 1px solid #5e4c5e;
     padding: 2px 5px;
     border-radius: 3px;
     font-family: 'Courier New', Courier, monospace;
+}
+.code-block {
+    max-width: 300px;
 }
 
 @media screen and (min-width:1100px) {
