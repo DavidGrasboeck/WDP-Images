@@ -1,6 +1,5 @@
 # Images
 #### By: David Grasböck, Rafael Fleischanderl
-Disclaimer: *every sub-topic will have a code-example*
 ## Summary- / Presentation - Structure
 ### Introduction  
 - user experience
