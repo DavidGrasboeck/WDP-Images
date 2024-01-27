@@ -144,6 +144,7 @@ code,
     max-width: 300px;
 }
 
+
 @media screen and (min-width:1100px) {
     footer {
         grid-template-columns: repeat(6, 2fr);
