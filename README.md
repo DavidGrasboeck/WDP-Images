@@ -2,9 +2,7 @@
 #### By: David Grasböck, Rafael Fleischanderl
 ## Summary- / Presentation - Structure
 ### Introduction  
-- user experience
 - significance of images
-- accessibility
 - HTML \<img> tag
 ### Image Position
 - CSS object position
@@ -12,22 +10,16 @@
 - CSS object fit
 ### Aspect Ratio
 - CSS aspect ratio
-- methods for maintaining aspect ratios
 ### Flexbox 
-- CSS flexbox
 - flexbox with images
 ### Background Images
 - background image using CSS
-- position and repetition
-- creative usecases
 ### Web Performance of Images
-- user experience
-- optimization techniques
 - lazy loading
 - blurry loading
 - preloading / caching
-- compression
 - image types (png, svg, gif, ...)
+### Accessibility
 ### Summary & Lessons learned  
     
 
